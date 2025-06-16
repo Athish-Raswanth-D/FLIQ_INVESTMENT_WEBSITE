@@ -1,0 +1,248 @@
+.new-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: #121212;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.new-settings-card {
+  width: 60%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.new-settings-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.new-info {
+  margin-bottom: 15px;
+}
+
+.new-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #f1f1f1;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.new-input,
+.new-textarea,
+.new-select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #333;
+  color: #fff;
+}
+
+.new-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.profile-image {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.new-button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.new-button:disabled {
+  background-color: #444;
+}
+
+.new-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Investments Section Styling */
+.investments-section {
+  width: 35%;
+  background-color: #1e1e1e;
+  color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.investments-section h3 {
+  color: #007bff;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid #333;
+  padding-bottom: 0.75rem;
+  position: relative;
+}
+
+.investments-section h3::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(to right, #007bff, #00c6ff);
+}
+
+.investments-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.investments-section li {
+  background-color: #2a2a2a;
+  margin-bottom: 12px;
+  padding: 15px;
+  border-radius: 6px;
+  border-left: 4px solid #007bff;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.investments-section li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to bottom, #007bff, #00c6ff);
+  opacity: 0.7;
+}
+
+.investments-section li[data-type="mutualfund"]::after {
+  background: linear-gradient(to bottom, #00cc88, #00ffaa);
+}
+
+.investments-section li[data-type="mutualfund"] {
+  border-left-color: #00cc88;
+}
+
+.investments-section li strong {
+  color: #fff;
+  font-size: 1.1em;
+  margin-right: 8px;
+}
+
+.investments-section li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  background-color: #333;
+}
+
+.investments-section li:hover strong {
+  color: #007bff;
+}
+
+.investments-section li[data-type="mutualfund"]:hover strong {
+  color: #00cc88;
+}
+
+.investments-section li::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.investments-section li[data-type="stock"]::before {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23007bff"><path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/></svg>');
+}
+
+.investments-section li[data-type="mutualfund"]::before {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2300cc88"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>');
+}
+
+.investments-section p {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  padding: 20px 0;
+}
+
+.investment-summary {
+  background-color: #252525;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.investment-summary h4 {
+  color: #f1f1f1;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed #444;
+}
+
+.summary-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.summary-label {
+  color: #aaa;
+}
+
+.summary-value {
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .new-wrapper {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .investments-section,
+  .new-settings-card {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}

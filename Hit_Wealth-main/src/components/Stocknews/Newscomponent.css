@@ -1,0 +1,19 @@
+.news-component{
+    display: flex;
+    height: fit-content;
+    width: 90vw;
+    background-color: black;
+    margin: auto;
+    padding: 20px;
+    flex-direction: column;
+    padding: 10px;
+}
+.maindivnews h1{
+    text-align: center;
+    margin: 20px;
+    color: var(--clr-robin-blue);
+}
+
+.content-part{
+    padding: 10px;
+}

@@ -1,0 +1,105 @@
+.mutual-funds-wrapper {
+    display: flex;
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: #000;
+    color: var(--clr-robin-blue);
+  }
+  .funds-list {
+    flex: 1; 
+    border-right: 1px solid #444;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 100%;
+    background-color: #222;
+  }
+  
+  .funds-list h3 {
+    text-align: center;
+    color: var(--clr-robin-blue);
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .fund-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .fund-item:hover, 
+  .fund-item.selected {
+    background-color: #1e88e5; 
+    color: #fff;
+  }
+  .fund-details {
+    flex: 2;
+    padding: 30px;
+    background-color: #121212;
+    color: #fff;
+  }
+  .investment-inputs label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .investment-inputs input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: #000;
+    background-color: #fff;
+  }
+  .returns {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #4caf50; 
+  }
+  .action-buttons button {
+    padding: 15px 30px;
+    margin: 10px 10px 0 0;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+  }
+  
+  .invest-button {
+    background-color: #4caf50;
+  }
+  
+  .invest-button:hover {
+    background-color: #388e3c;
+  }
+  
+  .redeem-button {
+    background-color: #f44336;
+  }
+  
+  .redeem-button:hover {
+    background-color: #d32f2f;
+  }
+  @media (max-width: 768px) {
+    .mutual-funds-wrapper {
+      flex-direction: column;
+    }
+  
+    .funds-list {
+      max-height: 300px;
+    }
+  }
+  
